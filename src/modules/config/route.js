@@ -1,5 +1,5 @@
-import Home from "../modules/maincontent/home/home.jsx";
-import Hi from "../modules/maincontent/hi/hi.jsx";
+import Home from "../maincontent/home/home.jsx";
+import Hi from "../maincontent/hi/hi.jsx";
 export default [{
 	name: "HOME",
 	path: "/",

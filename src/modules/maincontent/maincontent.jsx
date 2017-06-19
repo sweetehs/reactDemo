@@ -5,7 +5,7 @@ import {
 	Switch,
 	Link
 } from 'react-router-dom'
-import routes from "../../config/route.js";
+import routes from "../config/route.js";
 
 export default class Maincontent extends React.Component{	
 	render(){				

@@ -3,15 +3,15 @@ import "./less/reset.less";
 
 import React from "react";
 import ReactDom from "react-dom";
-import "./js/config/axios.js";
+import "./modules/config/axios.js";
 
 import thunk from 'redux-thunk'
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
-import userReducer from './js/modules/user/reducer.js';
-import appReducer from './js/modules/app/reducer.js';
-import App from "./js/modules/app/app.jsx";
+import userReducer from './modules/user/reducer.js';
+import appReducer from './modules/app/reducer.js';
+import App from "./modules/app/app.jsx";
 
 
 var reducers = combineReducers({

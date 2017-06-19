@@ -1,5 +1,5 @@
 import React from 'react';
-import routes from "../../config/route.js";
+import routes from "../config/route.js";
 import { Link } from 'react-router-dom'
 // Component  && PureComponent
 export default class Leftnav extends React.PureComponent{
