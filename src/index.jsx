@@ -3,6 +3,8 @@ import "./less/reset.less";
 
 import React from "react";
 import ReactDom from "react-dom";
+import "./js/config/axios.js";
+
 import thunk from 'redux-thunk'
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { Provider } from 'react-redux';

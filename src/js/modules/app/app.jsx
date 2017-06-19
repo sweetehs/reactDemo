@@ -1,5 +1,9 @@
 import React from 'react';
-
+// BrowserRouter && HashRouter
+import {
+  HashRouter as Router,
+  hashHistory
+} from 'react-router-dom'
 import {connect} from 'react-redux';
 import * as appAction from './action'
 
@@ -11,21 +15,23 @@ class App extends React.Component{
 	componentDidMount() {
 		this.props.getChannel();
 	}
-	render(){
+	render(){								
 		return (
-			<div className="main">
-				<div className="topnav-wrapper">
-					<Topnav />
-				</div>
-				<div className="bottom-wrapper">
-					<div className="leftnav-wrapper">
-						<Leftnav />
+			<Router history={hashHistory}>
+				<div className="main">					
+					<div className="topnav-wrapper">
+						<Topnav channel={this.props.channel}/>
 					</div>
-					<div className="content-wrapper">
-						<Maincontent channellist={this.props.channel} />
+					<div className="bottom-wrapper">
+						<div className="leftnav-wrapper">
+							<Leftnav/>
+						</div>
+						<div className="content-wrapper">
+							<Maincontent />
+						</div>
 					</div>
 				</div>
-			</div>
+			</Router>
 		)
 	}
 }
